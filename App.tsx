@@ -1,8 +1,10 @@
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 
-// This is a default functional component - it is always a single function, with a single return.
-export default function App() {
+// This is a fat arrow function
+// My preferred syntax - arrow functions do not redefine 'this' which can prevent bugs with
+// confusion of what 'this' refers to at any specific point.
+const App = () => {
   return (
     <View style={styles.container}>
       <Text>Hello World!</Text>
@@ -18,3 +20,5 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
   },
 });
+
+export default App;
