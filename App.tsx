@@ -1,6 +1,7 @@
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 
+// This is a default functional component - it is always a single function, with a single return.
 export default function App() {
   return (
     <View style={styles.container}>
